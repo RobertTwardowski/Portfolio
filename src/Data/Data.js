@@ -10,7 +10,7 @@ export const DataProjects = [
   {
       id: 1,
       photo:process.env.PUBLIC_URL + portfolio,
-      link: 'https://roberttwardowski.github.io/portfolio/',
+      link: 'https://gentle-mud-09bce1410.3.azurestaticapps.net/',
       name: 'Portfolio',
       about:
           'Portfolio to projekt zrealizowany w React. Projekt ten jest wykonany w formie aplikacji typu single page, co oznacza, że użytkownik może przeglądać zawartość strony bez konieczności przeładowywania całej strony, co przyczynia się do szybszego i bardziej płynnego użytkowania.',
