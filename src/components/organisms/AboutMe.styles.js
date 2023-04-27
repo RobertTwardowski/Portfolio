@@ -51,8 +51,7 @@ export const Container = styled.div`
   height: 85vh;
   margin: 1rem;
   background: rgb(212,212,237);
-background: linear-gradient(90deg, rgba(212,212,237,1) 0%, rgba(182,215,227,1) 21%, rgba(9,9,121,1) 100%, rgba(7,14,133,1) 100%);
-  border: 2px solid #111;
+background: linear-gradient(90deg, rgba(212,212,237,0.9) 0%, rgba(182,215,227,0.9) 21%, rgba(9,9,121,0.9) 100%, rgba(7,14,133,0.9) 100%);
   
   @media (max-width: 768px) {
     display: flex;
@@ -101,6 +100,7 @@ export const ContainerRight = styled.div`
     font-size: 22px;
     height: 100%;
     width: 100%;
+    text-shadow: 0 0 40px #000;
   }
   @media (max-width: 768px) {
     font-size: 10px;

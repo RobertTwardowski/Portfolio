@@ -30,7 +30,7 @@ export const Wrapper = styled.div`
   text-align: center;
   flex-direction: column;
   width: 1200px;
-  height: 90vh;
+  height: 85vh;
   padding: 1rem;
 
  
