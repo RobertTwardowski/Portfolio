@@ -54,7 +54,7 @@ export const StyledMenu = styled.div`
   position: absolute;
   top: 0px;
   right: 0px;
-  
+  z-index: 10;
 
 
   ul {
@@ -63,6 +63,7 @@ export const StyledMenu = styled.div`
     margin: 0;
     display: block;
     height: 100%;
+    z-index: 10;
   }
 
   li {
@@ -85,7 +86,7 @@ export const StyledButton = styled.button`
   position: absolute;
   top: 2px;
   right: 2px;
-  z-index: 10;
+  z-index: 11;
 
 
   &:hover {
