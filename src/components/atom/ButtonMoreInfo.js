@@ -6,6 +6,7 @@ export const ButtonMoreInfo = ({onClick}) => {
 
   const handelButton =()=>{
  onClick()
+ 
   }
   return (
     <ButtonMore onClick={handelButton}>Więcej Info</ButtonMore>

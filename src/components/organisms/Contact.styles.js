@@ -15,8 +15,9 @@ export const Container = styled.div`
   align-items: center;
   flex-direction: row;
   width: 1200px;
-  height: 90vh;
+  height: 85vh;
    margin: 1rem;
+   
    @media (max-width: 768px) {
     width: 100%;
   }
@@ -40,6 +41,9 @@ export const Container = styled.div`
 
   label{
     padding:5px;
+    font-weight: bold;
+    color: #000;
+    text-shadow:0 0 10px #fff;
   }
   input{
     padding: 8px;

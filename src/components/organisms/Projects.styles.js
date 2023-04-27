@@ -1,10 +1,23 @@
-import styled from "styled-components";
+import styled,{keyframes} from "styled-components";
+
+const fadeIn=keyframes`
+from{
+  opacity: 0;
+}
+to{
+  opacity: 1;
+}
+`
 
 export const Wrapper=styled.div`
 display: flex;
-flex-direction: column;
+flex-direction: row;
   justify-content: center;
   align-items: center;
+  opacity: 0;
+  animation-name: ${fadeIn};
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
 
   width: 100%;
   height: 100%;
@@ -12,6 +25,7 @@ flex-direction: column;
 `
 export const Container = styled.div`
   display: flex;
+  
   justify-content: center;
   align-items: center;
   flex-direction: row;
@@ -47,6 +61,7 @@ background: url(${props => props.photo});
 
 
 export const ContainerRight=styled.div`
+background: #111f24;
 width: 50%;
 height: 100%;
 display: flex;
@@ -84,7 +99,7 @@ a{
   margin-top: 1rem;
 }
   a:hover {
-    box-shadow: 0 0 20px #333;
+    box-shadow: 0 0 20px #fff;
     color: #111;
     cursor: pointer;
     transition: 0.5s;

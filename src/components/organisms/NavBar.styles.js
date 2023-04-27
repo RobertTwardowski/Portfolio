@@ -5,31 +5,33 @@ export const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid #fff;
-
+  border-bottom: 1px solid #fff;
+  
   @media (max-width: 768px) {
     width: 100%;
     height: 100%;
   }
-  
+ 
   
   ul {
     display: flex;
     flex-direction: row;
+  
   }
   li {
     padding: 2rem;
   }
 
   a:hover {
-    color: #222;
+    color: #344;
     font-weight: bold;
     cursor: pointer;
     transition: color 0.5s, opacity 0.5s linear;
   }
   a {
     text-decoration: none;
-    color: #e2e2e2;
+    color: #fff;
+    font-weight: bold;
   }
 `
 export const NeonWrapper = styled.div`
@@ -41,7 +43,7 @@ export const Txt = styled.span`
   font-size: 1rem;
   padding: 1rem;
   font-weight: bold;
-  font-family: 'Roboto';
+  text-shadow:0 0 10px #fff;
   text-transform: uppercase;
 `
 export const StyledMenu = styled.div`
@@ -52,7 +54,6 @@ export const StyledMenu = styled.div`
   position: absolute;
   top: 0px;
   right: 0px;
-  z-index: 4;
   
 
 

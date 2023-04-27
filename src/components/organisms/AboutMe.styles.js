@@ -11,6 +11,14 @@ const steam = keyframes`
 		background-position: 0 0;
 	}
 `
+const fadeIn=keyframes`
+from{
+  opacity: 0;
+}
+to{
+  opacity: 1;
+}
+`
 
 export const Wrapper = styled.div`
 
@@ -19,6 +27,11 @@ display: flex;
   align-items: center;
   width: 100%;
   height: 100%;
+  opacity: 0;
+  animation-name: ${fadeIn};
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+
   @media (max-width: 768px) {
     display: flex;
     justify-content: center;
@@ -35,9 +48,12 @@ export const Container = styled.div`
   align-items: center;
   flex-direction: row;
   width: 1000px;
-  height: 90vh;
+  height: 85vh;
   margin: 1rem;
-  border: 2px solid #e2e2e2;
+  background: rgb(212,212,237);
+background: linear-gradient(90deg, rgba(212,212,237,1) 0%, rgba(182,215,227,1) 21%, rgba(9,9,121,1) 100%, rgba(7,14,133,1) 100%);
+  border: 2px solid #111;
+  
   @media (max-width: 768px) {
     display: flex;
     justify-content: center;
@@ -99,7 +115,7 @@ position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  
+  z-index:2;
  
 `
 export const Foto = styled.div`
@@ -126,7 +142,7 @@ width: 100%;
    transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
-    background: linear-gradient(45deg ,#111, #333,	#F0FFF0,#999);
+    background: linear-gradient(45deg ,#ffff, #111333,	#000);
     background-size: 400%;
     width: calc(300px + 10px);
     height: calc(250px + 10px);
@@ -177,6 +193,7 @@ export const ContainerButton = styled.div`
   box-shadow: 0 0 10px #e2e2e2;
   margin-top: 1rem;
   text-decoration: none;
+  
   }
   a:hover {
     box-shadow: 0 0 20px #333;

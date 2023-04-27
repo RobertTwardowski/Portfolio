@@ -10,3 +10,11 @@ justify-content: space-between;
     justify-content: center;
   }
 `
+export const VideoBG = styled.video`
+  position: fixed; /* ustawienie pozycji na "relative" */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+
+  `

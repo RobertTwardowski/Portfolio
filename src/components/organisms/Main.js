@@ -3,7 +3,7 @@ import { MainInfo } from '../molecules/MainInfo'
 export const Main = () => {
   return (
     <>
-    <MainInfo/>
+    <MainInfo />
     </>
   )
 }
