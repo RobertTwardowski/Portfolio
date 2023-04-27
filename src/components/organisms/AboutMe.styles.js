@@ -98,7 +98,7 @@ export const ContainerRight = styled.div`
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 25px;
+    font-size: 22px;
     height: 100%;
     width: 100%;
   }
