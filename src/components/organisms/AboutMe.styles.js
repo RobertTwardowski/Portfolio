@@ -19,6 +19,14 @@ to{
   opacity: 1;
 }
 `
+const slideIn = keyframes`
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateX(-2000px);
+  }
+`
 
 export const Wrapper = styled.div`
 
@@ -51,7 +59,7 @@ export const Container = styled.div`
   height: 85vh;
   margin: 1rem;
   background: rgb(212,212,237);
-background: linear-gradient(90deg, rgba(212,212,237,0.9) 0%, rgba(182,215,227,0.9) 21%, rgba(9,9,121,0.9) 100%, rgba(7,14,133,0.9) 100%);
+background: linear-gradient(90deg, rgba(212,212,237,0.7) 0%, rgba(182,215,227,0.7) 21%, rgba(9,9,121,0.7) 100%, rgba(7,14,133,0.7) 100%);
   
   @media (max-width: 768px) {
     display: flex;
@@ -63,7 +71,7 @@ background: linear-gradient(90deg, rgba(212,212,237,0.9) 0%, rgba(182,215,227,0.
   }
   
   border-radius: 6px;
-  box-shadow: 0.65px 3px 3px 2px #444;
+  box-shadow: 1px 3px 3px 4px #999;
 `
 export const ContainerLeft = styled.div`
   display: flex;
