@@ -19,14 +19,6 @@ to{
   opacity: 1;
 }
 `
-const slideIn = keyframes`
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateX(-2000px);
-  }
-`
 
 export const Wrapper = styled.div`
 
